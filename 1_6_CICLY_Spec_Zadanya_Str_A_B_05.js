@@ -29,20 +29,21 @@
 
 function testCycle(a, b) {
     var x='';
-    if (a < b) {
+    if (a <= b) {
         for (i = a; i <= b; i++) {
-           return x = x + i + ' ';
+            x = x + i + ' ';
         }
-    }
-    else if (a > b) {
-            for (i = b; i <= a; i++) {
-               return x = x + i + ' ';
-            }
+    } else if (a >= b) {
+        for (i = b; i <= a; i++) {
+            x = x + i + ' ';
         }
-
     }
 
     return x;
+
+}
 // Тут нужно написать решение
 
-//console.log(testCycle(8, 1));
+console.log(testCycle(6, 6));
+
+
