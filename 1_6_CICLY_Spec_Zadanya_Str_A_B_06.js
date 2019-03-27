@@ -40,6 +40,6 @@ function testCycle(a, b) {
 }
 // Тут нужно написать решение
 
-console.log(testCycle(4, 10));
+console.log(testCycle(13, 3));
 
 
