@@ -11,28 +11,26 @@
 //
 // EvalError
 
+function func(a) {
+    throw new EvalError;
+}
+
 
 function testErrorFunc(a, func) {
-
-    if (func(a)) {
-        throw new Error(x);
-        //var a = 9;
-    }
-
     try {
-        console.log(func(a));
+        let x = func(a);
     }
     catch (ex) {
-        console.log(ex.name());
+        return ex.name;
 
-    }// Тут нужно написать решение
+    }
 
     return x;
 }
 
 
 
-
+console.log(testErrorFunc(11, func));
 
 
 
